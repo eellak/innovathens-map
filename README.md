@@ -1,6 +1,6 @@
 # Innovathens map
 
-A simple interactive map with hubs, moke, incubators etc. Built for Innovathens.
+A simple interactive map with hubs, moke, incubators etc. Built for [Innovathens](http://www.innovathens.gr/).
 
 ## Libraries used
 
