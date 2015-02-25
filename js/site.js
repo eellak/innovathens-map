@@ -1,3 +1,4 @@
+// the map
 var map = L.map('map', {
 	center: [37.98242, 23.72560],
 	zoom: 14,
@@ -7,12 +8,47 @@ var map = L.map('map', {
 	}
 });
 
+// add the title and draw the map
 L.tileLayer.grayscale('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
 	maxZoom: 18,
 	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 		'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 	id: 'examples.map-i875mjb7'
 }).addTo(map);
+
+var infobox = L.control();
+
+infobox.onAdd = function (map) {
+	this._div = L.DomUtil.create('div', 'infobox');
+	this.update();
+	return this._div;
+};
+
+infobox.update = function (props) {
+	this._div.innerHTML = '<h4>Innovathens Map</h4>' +
+		'<p>Μετακινηθείτε στο χάρτη<br />για να δείτε όλα τα points.</p>' +
+		'<ul><li>blah blah</li><li>blee blee</li></ul>'
+};
+infobox.addTo(map);
+
+// the LeafIcon common class
+/*
+var LeafIcon = L.Icon.extend({
+	options: {
+		shadowUrl: '',
+		iconSize: [, ],
+		shadowSize: [, ]
+	}
+});
+*/
+
+// icon classes for different types of markers
+/*
+var hubIcon = new LeafIcon({
+	iconUrl: '',
+	className = 'icon-hub'
+});
+*/
 
 // add markers and popups for the hubs; ugly hack but works wihout webserver
 var hub1 = L.marker([37.97384, 23.69542]).addTo(map);
