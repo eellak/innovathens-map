@@ -8,12 +8,16 @@ var map = L.map('map', {
 	}
 });
 
+L.map.accessToken = 'pk.eyJ1IjoiaW5ub3ZlbGxhayIsImEiOiJjTm83NXJJIn0.4GLn14YMdOWUaAClnknGnw';
+
 // add the title and draw the map
-L.tileLayer.grayscale('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + L.map.accessToken, {
+//		https://a.tiles.mapbox.com/v4/innovellak.lacbdh3o/page.html?access_token=pk.eyJ1IjoiaW5ub3ZlbGxhayIsImEiOiJjTm83NXJJIn0.4GLn14YMdOWUaAClnknGnw#4/39.00/22.00
 	maxZoom: 18,
-	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-		'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-	id: 'examples.map-i875mjb7'
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors, ' +
+		'<a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>, ' +
+		'Imagery © <a href="http://mapbox.com" target="_blank">Mapbox</a>',
+	id: 'innovellak.lacbdh3o'
 }).addTo(map);
 
 var infobox = L.control();
