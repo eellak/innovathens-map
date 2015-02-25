@@ -16,6 +16,9 @@
 .infobox h4 {
 	text-align: center;
 }
+.innovathens-popup .leaflet-popup-content a {
+	color: red;
+}
 
 /* Control.FullScreen plugin styling
  *
