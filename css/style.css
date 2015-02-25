@@ -1,4 +1,7 @@
 /* local styling */
+.leaflet-container {
+	font-family: 'Roboto Slab', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
 #map {
 	width: 800px;
 	height: 600px;
