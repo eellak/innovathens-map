@@ -30,8 +30,7 @@ infobox.onAdd = function (map) {
 
 infobox.update = function (props) {
 	this._div.innerHTML = '<h4>Innovathens Map</h4>' +
-		'<p>Μετακινηθείτε στο χάρτη<br />για να δείτε όλα τα points.</p>' +
-		'<ul><li>blah blah</li><li>blee blee</li></ul>'
+		'<p>Μετακινηθείτε στο χάρτη<br />για να δείτε όλα τα points.</p>'
 };
 infobox.addTo(map);
 
