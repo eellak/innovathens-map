@@ -2,6 +2,8 @@
 
 A simple interactive map with hubs, moke, incubators etc. Built for [Innovathens](http://www.innovathens.gr/).
 
+Live demo is available at [http://innov.ellak.gr](http://innov.ellak.gr/).
+
 ## Libraries used
 
 * [Leaflet](http://leafletjs.com/)
