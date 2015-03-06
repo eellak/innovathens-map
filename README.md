@@ -6,10 +6,9 @@ A simple interactive map with hubs, moke, incubators etc. Built for [Innovathens
 
 * [Leaflet](http://leafletjs.com/)
 * [Leaflet.Control.FullScreen](https://github.com/brunob/leaflet.fullscreen/)
-* [Leaflet.TileLayer.Grayscale](https://github.com/Zverik/leaflet-grayscale/)
 
 ## License
 
-This project is licensed under the [ISC license](http://opensource.org/licenses/ISC).
+This project is licensed under the [EUPL v.1.1](https://joinup.ec.europa.eu/software/page/eupl).
 
 Leaflet and its plugins are licensed under the [MIT License](http://opensource.org/licenses/MIT).
